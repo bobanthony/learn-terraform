@@ -21,6 +21,7 @@ variable "example3" {
 }
 
 output "types" {
-  value = "variable example1 - ${var.example1}, first value in the list - ${var.example2[0]}", boolean value of the map - ${var.example3["boolean"]}"
-
+  value = "variable example1 - ${var.example1}, first value in the list - ${var.example2[0]}, boolean
+value of the map - ${var.example3["boolean"]}"
 }
+
