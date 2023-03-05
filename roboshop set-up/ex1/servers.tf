@@ -23,7 +23,7 @@ resource "aws_instance" "catalogue" {
 }
 resource "aws_route53_record" "catalogue" {
   zone_id = "Z00739661SEOHEMKPHEUL"
-  name    = "frontend-dev.learndevopsb71solutions.site"
+  name    = "catalogue-dev.learndevopsb71solutions.site"
   type    = "A"
   ttl     = 30
   records = [aws_instance.catalogue.private_ip]
@@ -38,7 +38,7 @@ resource "aws_instance" "user" {
 }
 resource "aws_route53_record" "user" {
   zone_id = "Z00739661SEOHEMKPHEUL"
-  name    = "frontend-dev.learndevopsb71solutions.site"
+  name    = "user-dev.learndevopsb71solutions.site"
   type    = "A"
   ttl     = 30
   records = [aws_instance.user.private_ip]
@@ -53,7 +53,7 @@ resource "aws_instance" "cart" {
 }
 resource "aws_route53_record" "cart" {
   zone_id = "Z00739661SEOHEMKPHEUL"
-  name    = "frontend-dev.learndevopsb71solutions.site"
+  name    = "cart-dev.learndevopsb71solutions.site"
   type    = "A"
   ttl     = 30
   records = [aws_instance.cart.private_ip]
@@ -68,7 +68,7 @@ resource "aws_instance" "shipping" {
 }
 resource "aws_route53_record" "shipping" {
   zone_id = "Z00739661SEOHEMKPHEUL"
-  name    = "frontend-dev.learndevopsb71solutions.site"
+  name    = "shipping-dev.learndevopsb71solutions.site"
   type    = "A"
   ttl     = 30
   records = [aws_instance.shipping.private_ip]
@@ -83,7 +83,7 @@ resource "aws_instance" "payment" {
 }
 resource "aws_route53_record" "payment" {
   zone_id = "Z00739661SEOHEMKPHEUL"
-  name    = "frontend-dev.learndevopsb71solutions.site"
+  name    = "payment-dev.learndevopsb71solutions.site"
   type    = "A"
   ttl     = 30
   records = [aws_instance.payment.private_ip]
@@ -98,7 +98,7 @@ resource "aws_instance" "mysql" {
 }
 resource "aws_route53_record" "mysql" {
   zone_id = "Z00739661SEOHEMKPHEUL"
-  name    = "frontend-dev.learndevopsb71solutions.site"
+  name    = "mysql-dev.learndevopsb71solutions.site"
   type    = "A"
   ttl     = 30
   records = [aws_instance.mysql.private_ip]
@@ -113,7 +113,7 @@ resource "aws_instance" "rabbitmq" {
 }
 resource "aws_route53_record" "rabbitmq" {
   zone_id = "Z00739661SEOHEMKPHEUL"
-  name    = "frontend-dev.learndevopsb71solutions.site"
+  name    = "rabbitmq-dev.learndevopsb71solutions.site"
   type    = "A"
   ttl     = 30
   records = [aws_instance.rabbitmq.private_ip]
@@ -128,7 +128,7 @@ resource "aws_instance" "redis" {
 }
 resource "aws_route53_record" "redis" {
   zone_id = "Z00739661SEOHEMKPHEUL"
-  name    = "frontend-dev.learndevopsb71solutions.site"
+  name    = "redis-dev.learndevopsb71solutions.site"
   type    = "A"
   ttl     = 30
   records = [aws_instance.redis.private_ip]
@@ -143,7 +143,7 @@ resource "aws_instance" "dispatch" {
 }
 resource "aws_route53_record" "dispatch" {
   zone_id = "Z00739661SEOHEMKPHEUL"
-  name    = "frontend-dev.learndevopsb71solutions.site"
+  name    = "dispatch-dev.learndevopsb71solutions.site"
   type    = "A"
   ttl     = 30
   records = [aws_instance.dispatch.private_ip]
@@ -158,7 +158,7 @@ resource "aws_instance" "mongodb" {
 }
 resource "aws_route53_record" "mongodb" {
   zone_id = "Z00739661SEOHEMKPHEUL"
-  name    = "frontend-dev.learndevopsb71solutions.site"
+  name    = "mongodb-dev.learndevopsb71solutions.site"
   type    = "A"
   ttl     = 30
   records = [aws_instance.mongodb.private_ip]
