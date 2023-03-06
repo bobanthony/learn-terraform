@@ -8,7 +8,7 @@ resource "aws_instance" "frontend" {
   }
 }
 variable "instances" {
-  default = ["cart","catalogue","shipping","payment" ]
+  default = ["cart","catalogue","shipping","payment","user" ]
 }
 output "public-ip" {
   value = "aws_instance.frontend.public_ip"
