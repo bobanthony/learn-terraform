@@ -7,3 +7,6 @@ resource "aws_instance" "ec2" {
 variable "instances" {
   default = ["cart","catalogue","shipping","payment" ]
 }
+output "public-ip" {
+  value = "aws_instance.ec2.public_ip"
+}
