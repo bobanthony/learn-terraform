@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
     bucket = "learn-devops-online"
-    key = "05-s3-state/main.tf"
+    key = "05-s3-state/terraform.tfstate"
     region = "us-east-1"
   }
 }
