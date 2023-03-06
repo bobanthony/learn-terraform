@@ -1,4 +1,4 @@
-resource "aws_instance" "ec2" {
+resource "aws_instance" "frontend" {
   count                  = length(var.instances)
   ami                    = "ami-0a017d8ceb274537d"
   instance_type          = "t3.micro"
@@ -8,5 +8,5 @@ variable "instances" {
   default = ["cart","catalogue","shipping","payment" ]
 }
 output "public-ip" {
-  value = "aws_instance.cart.public_ip"
+  value = "aws_instance.frontend.public_ip"
 }
