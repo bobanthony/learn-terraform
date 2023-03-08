@@ -6,7 +6,7 @@ resource "aws_instance" "ec2" {
     name = "var.component"
   }
 }
-resource "aws_route53_record" "deol" {
+resource "aws_route53_record" "ec2" {
   zone_id = "Z00739661SEOHEMKPHEUL"
   name    = "$(var.component)-dev.learndevopsb71solutions.site"
   type    = "A"
