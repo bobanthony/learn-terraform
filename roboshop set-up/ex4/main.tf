@@ -3,7 +3,7 @@ module "ec2" {
   for_each = var.instances
   source = "./ec2"
   component = each.value["name"]
- 
+
 }
 variable "instances" {
   default = {
