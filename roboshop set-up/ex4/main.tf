@@ -5,6 +5,9 @@ module "ec2" {
   component = each.value["name"]
 
 }
+module "sg" {
+  source = "./sg"
+}
 variable "instances" {
   default = {
     catalogue = {
