@@ -9,3 +9,6 @@ module "ec2" {
   sg_id           = module.sg.sg_id
 
 }
+output "ec2" {
+  value = module.ec2
+}
