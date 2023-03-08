@@ -1,0 +1,3 @@
+module "deol" {
+  source = "./deol"
+}
