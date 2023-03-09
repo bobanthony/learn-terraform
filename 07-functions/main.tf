@@ -9,5 +9,5 @@ variable "match" {
   }
 }
 output "match" {
-  value = var.match["catalogue"]
+  value = var.match["catalogue"].private_ip
 }
