@@ -3,5 +3,7 @@ resource "aws_route53_record" "record" {
   name    = "${var.component}-dev.learndevopsb71solutions.site"
   type    = "A"
   ttl     = 300
-  records = [aws_instance.ec2.private_ip]
+  records = [var.private_ip]
 }
+variable "private_ip" {}
+variable "component" {}
