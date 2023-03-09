@@ -16,7 +16,7 @@ resource "aws_instance" "ec2" {
     }
 
     inline = [
-      "deol rocked yesterday"
+      "echo hello"
     ]
   }
   
