@@ -6,7 +6,7 @@ module "ec2" {
 
   sg_id           = module.sg.sg_id
 
-  instance_type = "null"
+  instance_type = ""
 }
 module "sg" {
   source = "./sg"
