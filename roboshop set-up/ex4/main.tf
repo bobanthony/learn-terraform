@@ -3,22 +3,23 @@ module "ec2" {
   for_each      = var.instances
   source        = "./ec2"
   component     = each.value["name"]
-  instance_type = each.value["type"]
+
   sg_id           = module.sg.sg_id
 
+  instance_type = "null"
 }
 module "sg" {
   source = "./sg"
 }
 variable "instances" {
   default = {
-    catalogue = {
-      name = "catalogue"
+    frontend = {
+      name = "frontend"
       type = "t3.micro"
     }
     cart = {
       name = "cart"
-      type = "t2.small"
+      type = "t3.micro"
     }
   }
 }
