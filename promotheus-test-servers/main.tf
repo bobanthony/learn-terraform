@@ -5,7 +5,7 @@ resource "aws_spot_instance_request" "deol" {
   wait_for_fulfillment = true
 
   tags = {
-    Name = "promotheus-test2"
+    Name = "promotheus-test1"
   }
 }
 resource "aws_ec2_tag" "deol" {
@@ -19,7 +19,7 @@ resource "aws_spot_instance_request" "match" {
   instance_type = "t2.micro"
 
   tags = {
-    Name = "promtetheus-test1"
+    Name = "promtetheus-test2"
   }
 }
 resource "aws_ec2_tag" "match" {
