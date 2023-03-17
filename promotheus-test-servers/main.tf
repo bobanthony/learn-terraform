@@ -1,5 +1,5 @@
 resource "aws_spot_instance_request" "deol" {
-  ami           = "ami-0a017d8ceb274537d"
+  ami           = "ami-05aea24181131bed8"
   vpc_security_group_ids = ["sg-0b173a0934aeda686"]
   instance_type = "t2.micro"
   wait_for_fulfillment = true
@@ -14,7 +14,7 @@ resource "aws_ec2_tag" "deol" {
   value       = "promotheus-test1"
 }
 resource "aws_spot_instance_request" "match" {
-  ami           = "ami-0a017d8ceb274537d"
+  ami           = "ami-05aea24181131bed8"
   vpc_security_group_ids = ["sg-0b173a0934aeda686"]
   instance_type = "t2.micro"
 
